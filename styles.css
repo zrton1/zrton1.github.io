@@ -54,7 +54,7 @@
 .flex {
 	flex: 1 0 33%;
   border: 1px solid black;
-  background: pink;
+  background: #a18aab;
 	max-height: 100px;
 	max-width: 100px;
 
@@ -63,4 +63,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.flex.active{
+  background: #c0c0c0
 }
