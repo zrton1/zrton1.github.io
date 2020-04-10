@@ -12,8 +12,8 @@
 
     /* Remove any browser-default margins. */
     margin: 10;
-}
 
+}
 /*This is the top container (row 1)*/
 .FlexContainer1 {
 	min-height: 25vh;
