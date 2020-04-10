@@ -11,7 +11,7 @@
     width: 100vw;
 
     /* Remove any browser-default margins. */
-    margin: 0;
+    margin: 10;
 }
 /*
 .OverallContainer{
@@ -25,10 +25,10 @@
 
   display: flex;
   flex-wrap: wrap;
-	padding-left: 5em;
-	padding-right: 5em;
-	padding-bottom: 2.5em;
-	padding-top: 5em;
+	padding-left: 1%;
+	padding-right: 1%;
+	padding-bottom: .5%;
+	padding-top: 1%;
 	justify-content:space-around;
 }
 
@@ -36,10 +36,10 @@
 	min-height: 25vh;
   display: flex;
   flex-wrap: wrap;
-	padding-left: 5em;
-	padding-right: 5em;
-	padding-bottom: 5em;
-	padding-top: 2.5em;
+	padding-left: 1%;
+	padding-right: 1%;
+	padding-bottom: 1%;
+	padding-top:.5%;
 	justify-content:space-around;
 }
 
