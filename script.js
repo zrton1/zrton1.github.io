@@ -12,7 +12,6 @@ flex.forEach(flex => {
 //Check which sound bank to play
 function soundBank(CurrentCount){
 	if ((CurrentCount-1)%5 == 0){
-		console.log("first CurrentCount", CurrentCount)
 		bankNo += 1;
 		console.log("bankNo: ", bankNo);
 	}
