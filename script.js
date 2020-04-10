@@ -1,16 +1,17 @@
-const keys = document.querySelectorAll('.key')
+//This script links the 'flex''child class and links it to the audio
+const flex = document.querySelectorAll('.flex')
 
-keys.forEach(key => {
-	key.addEventListener('click', ()=>playNote(key))
+flex.forEach(flex => {
+	flex.addEventListener('click', ()=>playNote(flex))
 })
 
-function playNote(key){
-	const noteAudio = document.getElementById(key.dataset.note)
+function playNote(flex){
+	const noteAudio = document.getElementById(flex.dataset.note)
+//setting current time to 0 means that the note can be re-played every time it's clicked
 	noteAudio.currentTime = 0
 	noteAudio.play()
-	key.classList.add('active')
+	flex.classList.add('active')
 	noteAudio.addEventListener('ended' , ()=> {
-		key.classList.remove('active')
+		flex.classList.remove('active')
 	})
 }
-
