@@ -54,7 +54,7 @@
 .flex {
 	flex: 1 0 33%;
   border: 1px solid black;
-  background: blue;
+  background: pink;
 	max-height: 100px;
 	max-width: 100px;
 
