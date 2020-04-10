@@ -11,15 +11,16 @@ body{
 	align-items: center;
 }
 
+/*so that all piano keys are next to each other (not vertical)*/
 .piano{
 	display: flex;
 }
-
+/*key selector **things that are shared between the classes** */
 .key{
 	height: calc(var(--width)*4);
 	width: var(--width);
 }
-
+/*white class*/
 .white{
 	--width: 100px;
 	background-color: white;
@@ -30,6 +31,7 @@ body{
 	background-color: #ccc;
 }
 
+/*black class*/
 .black{
 	--width: 60px;
 	background-color: black;
