@@ -1,5 +1,6 @@
 //This script links the 'flex''child class and links it to the audio
 const flex = document.querySelectorAll('.flex')
+const flexEnd = document.querySelectorAll('.flexEnd')
 let CurrentCount = 1;
 let bankNo = -1;
 
@@ -7,8 +8,11 @@ let bankNo = -1;
 instruction();
 flex.forEach(flex => {
 	flex.addEventListener('click', ()=>playNote(flex))
-})
-flexEnd.addEventListener('click',()=>finishedPlay(flexEnd))
+});
+flexEnd.forEach(flexEnd => {
+	flexEnd.addEventListener('click',()=>finishedPlay(flexEnd))
+});
+
 
 
 function instruction(){
@@ -74,5 +78,5 @@ function counter(count){
 
 //Go to feedback form when the finished button is pressed
 function	finishedPlay(flexEnd){
-	window.location = 'https://www.google.com/';
+if(confirm("Are you sure you're done?")) document.location = 'https://www.google.com/';
 }
