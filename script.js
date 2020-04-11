@@ -4,13 +4,16 @@ const flexEnd = document.querySelectorAll('.flexEnd')
 
 let startingTime;
 let date = new Date();
+
 let CurrentCount = 1;
 let bankNo = -1;
 
 
 instruction();
-startingTime = startTime();
-console.log(startingTime);
+//startingTime = startTime();
+//console.log(startingTime);
+console.log(startTime());
+
 flex.forEach(flex => {
 	flex.addEventListener('click', ()=>playNote(flex))
 });
@@ -84,15 +87,25 @@ function counter(count){
 
 //Go to feedback form when the finished button is pressed
 function finishedPlay(flexEnd){
-if(confirm("Are you sure you're done?")) document.location = 'https://www.google.com/';
+if(confirm("Are you sure you're done?")) {
+	endTime();
+ console.log(endTime());
+	setTimeout(3000);
+	document.location = 'https://www.google.com/';
+
+
+}
 }
 
 //Timer that automatically starts when user clicks instructions alert
 function startTime(){
-	return date.getTime();
+	start = date.getTime()
+	return start;
 }
 
 //Finding the end time and time spent on the page
 function endTime(){
-
+	let date2 = new Date();
+ finish = date2.getTime();
+ return finish;
 }
