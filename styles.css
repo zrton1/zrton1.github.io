@@ -1,14 +1,14 @@
 /*Overall main container which keeps the first and second rows in place*/
 .OverallContainer {
     /* Height and width fallback for older browsers. */
-    height: 100%;
-    width: 100%;
+    height: 95%;
+    width: 95%;
 
     /* Set the height to match that of the viewport. */
-    height: 100vh;
+    height: 95vh;
 
     /* Set the width to match that of the viewport. */
-    width: 100vw;
+    width: 95vw;
 
     /* Remove any browser-default margins. */
     margin: 10;
@@ -16,7 +16,7 @@
 }
 /*This is the top container (row 1)*/
 .FlexContainer1 {
-	min-height: 25vh;
+	min-height: 40vh;
 
   display: flex;
   flex-wrap: wrap;
@@ -29,7 +29,7 @@
 
 /*This is the bottom container (row 2)*/
 .FlexContainer2 {
-	min-height: 25vh;
+	min-height: 40vh;
   display: flex;
   flex-wrap: wrap;
 	padding-left: 1%;
@@ -39,6 +39,21 @@
 	justify-content:space-around;
 }
 
+/*FlexContainer3 and flexEnd are both for the Finished! button*/
+.FlexContainer3{
+  min-height: 5vh;
+  display: flex;
+}
+.flexEnd{
+  display: flex;
+  background: #4287f5;
+  border: 1px solid;
+  align-items: center;
+  color: white;
+  align-items: center;
+  justify-content: center;
+
+}
 
 .flex:before {
   content: '';
@@ -51,6 +66,7 @@
 	flex: 1 0 33%;
   border: 1px solid black;
   background: #a18aab;
+/*Need to change from px to % or something...*/
 	max-height: 100px;
 	max-width: 100px;
 
