@@ -3,15 +3,21 @@ const flex = document.querySelectorAll('.flex')
 let CurrentCount = 1;
 let bankNo = -1;
 
+
+instruction();
 flex.forEach(flex => {
 	flex.addEventListener('click', ()=>playNote(flex))
 })
 
 
+function instruction(){
+alert("Thanks for participating!\n Here are a few important things before you start:\n1. Once you are done, please click Finished! This will ensure that your interaction is recorded. You may do this at any time\n2. During the interaction, the volume may change. Please click 'Test Volume' and set it to your preferred volume level and then do not change it.\n3. There will be a questionnaire after you finish, please feel free to complete this.\n Thank you for participating!");
+}
 //When RL is implemented, bankNo will be an output of that algorithm
 //Check which sound bank to play
 function soundBank(CurrentCount){
 	if ((CurrentCount-1)%5 == 0){
+
 		bankNo += 1;
 		console.log("bankNo: ", bankNo);
 	}
