@@ -32,10 +32,11 @@ flexEnd.forEach(flexEnd => {
 
 //Initial instruction popup when page loads
 function instruction(){
-alert("Thanks for participating!\n Here are a few important things before you start:\
+alert("Thanks for participating!\n Instructions: \nClick on the keys to hear some exciting sounds!\
+\n\n Here are a few important things before you start:\
 \n 1. Once you are done, please click Finished! This will ensure that your interaction is recorded. You may do this at any time.\
 \n 2. During the interaction, the volume may change. Please click 'Test Volume' and set it to your preferred volume level and then do not change it.\
-\n3. There will be a questionnaire after you finish, please feel free to complete this.\n Please note, this web app is part of a research project for ECE4095");
+\n 3. There will be a questionnaire after you finish, please feel free to complete this.\n Please note, this web app and your participation is part of a research project for ECE4095. If you do not wish to participate, exit now.");
 //Alert halts code. Once the alert has been accepted, the start time will be called.
 start = startTime();
 return start;
